@@ -31,3 +31,12 @@ article section figcaption {
 p > code {
   background-color: #d8d8d8;
 }
+
+cite {
+  display: block;
+  padding-top: 100px;
+  color: #666;
+}
+.nested-links cite a {
+  color: #7882ac;
+}
