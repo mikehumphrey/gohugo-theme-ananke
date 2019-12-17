@@ -6,11 +6,28 @@
 
 .lh-copy blockquote {
   display: block;
-  font-size: .875em;
+  font-size: 0.875em;
   margin-left: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
   border-left: 4px solid #ccc;
   padding-left: 1rem;
+}
 
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.bg-blur {
+  backdrop-filter: blur(10px);
+}
+
+article section figcaption {
+  font-style: italic;
+  color: #888;
+}
+
+p > code {
+  background-color: #d8d8d8;
 }
