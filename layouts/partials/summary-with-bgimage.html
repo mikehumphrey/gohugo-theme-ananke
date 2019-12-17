@@ -1,0 +1,31 @@
+{{ $featured_image := .Params.featured_image }}
+<article class="br4">
+  <div class="bg-white-70">
+    <a href="{{.Permalink}}" class="color-inherit link no-underline">
+      <div class="flex flex-column flex-row-ns">
+        {{ $featured_image := (trim $featured_image "/") | absURL }}
+        <div class="w-100">
+          <div
+            class="bg-white-80 bg-center-ns cover flex items-end"
+            style="min-height:220px; background-image: url({{ $featured_image }}); background-blend-mode:overlay;"
+          >
+            <h1 class="b f3 mt0 lh-title ph3">
+              {{ .Title }}
+            </h1>
+          </div>
+          <div
+            class="f6 f5-l pa3 lh-copy nested-copy-line-height nested-links "
+          >
+            {{ .Summary }}
+          </div>
+          <button
+            href="{{.Permalink}}"
+            class="ma3 db ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1"
+          >
+            {{ $.Param "read_more_copy" | default (i18n "readMore") }}
+          </button>
+        </div>
+      </div>
+    </a>
+  </div>
+</article>
