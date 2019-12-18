@@ -15,16 +15,13 @@ nbproject/
 .vagrant/
 
 # FE Setup
-.bin/node_modules/
-/node_modules/
-src/node_modules/
+node_modules/
 src/npm-debug.log.*
 npm-debug.log
-/npm-debug.log*
-/dist/
+dist/
 /src/client.config.json
-/styleguide/
-/docs/
+styleguide/
+docs/
 
 /junit.xml
 partials/structure/stylesheet.html
