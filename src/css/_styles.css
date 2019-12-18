@@ -67,7 +67,7 @@ main.fp section.top {
 
 main.fp section.features {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  grid-template-columns: 1fr;
   grid-gap: 2em;
   margin: 0 auto;
   padding: 32px;
@@ -83,7 +83,11 @@ main.fp section.features p {
   text-align: center;
 }
 
-@media screen and (min-width: 755px) {
+@media screen and (min-width: 960px) {
+  main.fp section.features {
+    grid-template-columns: repeat(2, 450px);
+  }
+
   main.fp section.features p:nth-child(1) {
     order: 1;
   }
@@ -113,7 +117,7 @@ main.fp section.features p {
 main.fp section.bottom {
   background-image: url("/img/bg-bottom.svg");
   background-position: top center;
-  padding: 25vw 20px 15vh 20px;
+  padding: 25vw 20px 2rem 20px;
 }
 
 main.fp .signup {
