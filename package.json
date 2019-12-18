@@ -9,7 +9,8 @@
   },
   "scripts": {
     "version": "auto-changelog -p --template keepachangelog --commit-limit 0 && git add CHANGELOG.md",
-    "dist": "yarn --cwd src build:production"
+    "dist": "yarn --cwd src build:production",
+    "watch": "yarn --cwd src build"
   },
   "keywords": [
     "hugo",
