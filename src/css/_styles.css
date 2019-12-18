@@ -70,6 +70,7 @@ main.fp section.features {
   grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
   grid-gap: 2em;
   margin: 0 auto;
+  padding: 32px;
   align-content: center;
   justify-content: center;
 }
