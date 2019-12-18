@@ -28,8 +28,11 @@ article section figcaption {
   color: #888;
 }
 
-p > code {
-  background-color: #d8d8d8;
+p > code, li > code {
+  display: inline-block;
+  padding: 0 6px;
+  background-color: #fff;
+  color: rgb(14, 59, 0);
 }
 
 cite {
@@ -71,19 +74,25 @@ main.fp section.features {
   grid-gap: 2em;
   margin: 0 auto;
   padding: 32px;
+  padding-bottom: 0;
   align-content: center;
   justify-content: center;
 }
 
 main.fp section.features p {
-  padding: 1em 2em;
+  padding: 16px 32px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+main.fp section.features p:last-child {
+  padding-bottom: 0;
+}
+
 @media screen and (min-width: 960px) {
+  /* 60em, the "l" breakpoint for tachyons */
   main.fp section.features {
     grid-template-columns: repeat(2, 450px);
   }
@@ -117,7 +126,13 @@ main.fp section.features p {
 main.fp section.bottom {
   background-image: url("/img/bg-bottom.svg");
   background-position: top center;
-  padding: 25vw 20px 2rem 20px;
+  padding: 230px 32px 32px 32px;
+}
+
+@media screen and (min-width: 960px) {
+  main.fp section.bottom {
+    padding: 20vw 20px 2rem 20px;
+  }
 }
 
 main.fp .signup {
