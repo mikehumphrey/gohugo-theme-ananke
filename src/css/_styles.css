@@ -128,6 +128,7 @@ main.fp .signup input[type="email"] {
 .gdpr a,
 footer a {
   color: #7cc2ff;
+  text-decoration: none;
 }
 
 footer {

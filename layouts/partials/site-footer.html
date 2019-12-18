@@ -1,8 +1,18 @@
-<footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+<!-- <footer class="{{ .Site.Params.background_color_class | default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="{{ .Site.BaseURL }}" >
     &copy; {{ now.Format "2006" }} {{ .Site.Title }}
   </a>
-    <div>{{ partial "social-follow.html" . }}</div>
   </div>
+</footer>
+ -->
+
+<footer>
+  <div><a href="/#mc_embed_signup">Sign up!</a></div>
+  <div><a href="/tags/about/">About</a></div>
+  <div><a href="/tags/getting-started/">Getting Started</a></div>
+  <div><a href="/tags/faq/" title="Frequently Asked Questions">FAQ</a></div>
+  <div title="Toll free: +1(844)-PHOTO-80">+1-844-746-8680</div>
+  <div>Copyright &copy; {{ now.Format "2006" }} PhotoStructure, Inc.</div>
+  <div>{{ partial "social-follow.html" . }}</div>
 </footer>
