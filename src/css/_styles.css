@@ -67,9 +67,8 @@ main.fp section.top {
 
 main.fp section.features {
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
-  grid-auto-rows: minmax(300px, auto);
-
+  grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+  grid-gap: 2em;
   margin: 0 auto;
   align-content: center;
   justify-content: center;
@@ -80,14 +79,35 @@ main.fp section.features p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
-/* 
-main.fp section.features p:nth-child(1) {
-  order: 2;
+
+@media screen and (min-width: 755px) {
+  main.fp section.features p:nth-child(1) {
+    order: 1;
+  }
+  main.fp section.features p:nth-child(2) {
+    order: 2;
+  }
+  main.fp section.features p:nth-child(3) {
+    order: 4;
+  }
+  main.fp section.features p:nth-child(4) {
+    order: 3;
+  }
+  main.fp section.features p:nth-child(5) {
+    order: 5;
+  }
+  main.fp section.features p:nth-child(6) {
+    order: 6;
+  }
+  main.fp section.features p:nth-child(7) {
+    order: 8;
+  }
+  main.fp section.features p:nth-child(8) {
+    order: 7;
+  }
 }
-main.fp section.features p:nth-child(2) {
-  order: 4;
-} */
 
 main.fp section.bottom {
   background-image: url("/img/bg-bottom.svg");
