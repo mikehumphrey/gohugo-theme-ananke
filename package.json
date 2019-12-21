@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/theNewDynamic/thenewdynamic.com#readme",
   "devDependencies": {
-    "auto-changelog": "^1.16.2"
+    "auto-changelog": "^1.16.1"
   }
 }
